@@ -1,0 +1,6 @@
+<%= form_for @lemon, remote: true do |f| %>
+  <div>
+    <%= f.text_area :description, placeholder: "ex: Originally found in the backyard of Justin Hoehner..." %>
+  </div>
+  <%= f.submit %>
+<% end %>

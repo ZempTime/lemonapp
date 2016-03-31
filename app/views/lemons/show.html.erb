@@ -1,0 +1,24 @@
+<h1>Praise the Lemon</h1>
+
+<p>
+  Name: <%= @lemon.name %>
+</p>
+
+<p>
+  Species: <%= @lemon.species %>
+</p>
+
+<div id="description">
+<%= link_to "inline description edit", "#", data: {behavior: "inline-lemon-edit-button", form_url: form_lemon_path(@lemon)} %>
+  <div id="form-container">
+  </div>
+  <div id="description-container">
+    <p>
+      <span>Description:</span> <%= @lemon.description %>
+    </p>
+  </div>
+</div>
+
+<br>
+<%= link_to "edit", edit_lemon_path(@lemon) %>
+<%= link_to "new", new_lemon_path %>

@@ -1,0 +1,7 @@
+<h1>All the Lemons</h1>
+
+<% @lemons.each do |lemon| %>
+  <%= link_to lemon.name, lemon_path(lemon) %>
+<% end %>
+
+<%= link_to "New Lemon", new_lemon_path %>

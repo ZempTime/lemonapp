@@ -1,0 +1,23 @@
+<%= form_for @lemon, remote: true do |f| %>
+  <% if @lemon.errors.any? %>
+    <ul>
+      <% @lemon.errors.full_messages.each do |msg| %>
+        <li> <%= msg %> </li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <div>
+    <%= f.text_field :name, placeholder: "Name" %>
+  </div>
+  <br>
+  <div>
+    <%= f.text_field :species, placeholder: "Species" %>
+  </div>
+  <br>
+  <div>
+    <%= f.text_area :description, placeholder: "ex: Originally found in the backyard of Justin Hoehner..." %>
+  </div>
+  <br>
+  <%= f.submit %>
+<% end %>
