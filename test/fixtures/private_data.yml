@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  ssn: MyString
+  dob: 2016-03-30 21:28:05
+
+two:
+  name: MyString
+  ssn: MyString
+  dob: 2016-03-30 21:28:05
