@@ -1,0 +1,2 @@
+class Lemon < ApplicationRecord
+end
